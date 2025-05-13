@@ -26,5 +26,6 @@ and d) best-known circles in circle with random rotation (this work).
 ## V. EXPERIMENTAL VALIDATION
 
 
-very solid work. but I have not yet fully understand the equations. 
+My comments:
+Very solid work. but I have not yet fully understand the equations. 
 I personally just cannot understand the well-know Dowell's approach and Ferreira's approach. 

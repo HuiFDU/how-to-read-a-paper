@@ -110,10 +110,15 @@ Air-LEGO转换器的空气耦合电感设计需要优化电感绕组几何形状
 这些见解为下一版Air-LEGO原型的设计提供了宝贵的指导。关键改进包括更好地选择针对转换器工作频率、额定电压和电流进行优化的开关器件。此外，空心电感设计需要进一步优化以增加电感值，同时最大限度地减少直流和交流电阻，所有这些都要在保持所需的薄型外形的前提下进行。这些改进对于在未来的迭代中实现更高的效率和整体性能至关重要。
 
 *图10. Air-LEGO原型（带PCB走线电感）的正面、背面和侧面图，实现了3毫米的薄型轮廓。*
+
 *图11. 测试平台图片，包括直流电源、电子负载、带电流分流器用于功率测量的数字万用表和示波器。*
+
 *图12. Air-LEGO原型的关键实验波形：(a) 开关电容级400 kHz门极驱动信号，占空比50%，相位差180°；其中一个降压子模块的2 MHz两相门极驱动信号，交错180°。(b) 4V中间总线电压，两相交错降压级开关节点电压和1V输出电压。*
+
 *图13. 采用PCB绕组的Air-LEGO原型在24V至1V工作电压和120A输出电流下的热成像图。降压级的DrMOS模块温度最高。*
+
 *图14. Air-LEGO原型在使用Litz线电感或PCB绕组电感时，在不同输入电压和不同降压级开关频率下的测量效率，不包括门极驱动的功耗。采用Litz线空气耦合电感的原型表现出更高的效率。*
+
 *图15. Air-LEGO原型在24V至1V、2MHz工作频率下，采用PCB绕组电感时的计算损耗分析。开关电容级损耗分为由开关引起的开关和导通损耗，以及由电容器引起的损耗。在降压级，损耗分为器件开关和导通损耗以及来自空气耦合电感的绕组损耗。*
 
 ## V. 结论
@@ -131,17 +136,30 @@ Air-LEGO转换器的空气耦合电感设计需要优化电感绕组几何形状
 ## 参考文献
 
 [1] K. Radhakrishnan, M. Swaminathan, and B. K. Bhattacharyya, "Power delivery for high-performance microprocessors-challenges, solutions, and future trends," IEEE Transactions on Components, Packaging and Manufacturing Technology, vol. 11, no. 4, pp. 655-671, 2021.
+
 [2] M. Chen, S. Jiang, J. A. Cobos, and B. Lehman, "Design considerations for 48-v vrm: Architecture, magnetics, and performance tradeoffs," in 2023 Fourth International Symposium on 3D Power Electronics Integration and Manufacturing (3D-PEIM), 2023, pp. 1-9.
+
 [3] C. R. Sullivan, B. A. Reese, A. L. F. Stein, and P. A. Kyaw, "On size and magnetics: Why small efficient power inductors are rare," in 2016 International Symposium on 3D Power Electronics Integration and Manufacturing (3D-PEIM), 2016, pp. 1-23.
+
 [4] B. Choi, J. Baek, B. C. Marin, S. Qu, S. Kulasekaran, J. I. Chavarria, L. E. Wojewoda, and K. Radhakrishnan, "Coaxmil 2.0 next generation coaxial magnetic integrated inductors for higher efficiency fully integrated voltage regulator," in 2024 IEEE 74th Electronic Components and Technology Conference (ECTC), 2024, pp. 1044-1047.
+
 [5] J. Baek, Y. Elasser, K. Radhakrishnan, H. Gan, J. P. Douglas, H. K. Krishnamurthy, X. Li, S. Jiang, C. R. Sullivan, and M. Chen, "Vertical stacked lego-pol cpu voltage regulator," IEEE Transactions on Power Electronics, vol. 37, no. 6, pp. 6305-6322, 2022.
+
 [6] Y. Elasser, J. Baek, K. Radhakrishnan, H. Gan, J. P. Douglas, H. Κ. Krishnamurthy, X. Li, S. Jiang, V. De, C. R. Sullivan, and M. Chen, "Mini-lego cpu voltage regulator," IEEE Transactions on Power Electronics, vol. 39, no. 3, pp. 3391-3410, 2024.
+
 [7] P. Wang, Y. Chen, G. Szczeszynski, S. Allen, D. M. Giuliano, and M. Chen, "Msc-pol: Hybrid gan-si multistacked switched-capacitor 48-v pwrsip vrm for chiplets," IEEE Transactions on Power Electronics, vol. 38, no. 10, pp. 12815-12 833, 2023.
+
 [8] Y. Elasser, H. Li, P. Wang, J. Baek, K. Radhakrishnan, S. Jiang, H. Gan, X. Zhang, D. Giuliano, and M. Chen, "Circuits and magnetics co-design for ultra-thin vertical power delivery: A snapshot review," MRS Advances, vol. 9, no. 1, pp. 12-24, Feb 2024. [Online]. Available: https://doi.org/10.1557/s43580-023-00724-w
+
 [9] N. M. Ellis, R. A. Abramson, R. Mahony, and R. C. N. Pilawa-Podgurski, "The symmetric dual inductor hybrid converter for direct 48v-to-pol conversion," IEEE Transactions on Power Electronics, vol. 39, no. 6, pp. 7278-7289, 2024.
+
 [10] D. Serrano, H. Li, S. Wang, T. Guillod, M. Luo, V. Bansal, N. K. Jha, Y. Chen, C. R. Sullivan, and M. Chen, "Why magnet: Quantifying the complexity of modeling power magnetic material characteristics," IEEE Transactions on Power Electronics, vol. 38, no. 11, pp. 14292-14 316, 2023.
+
 [11] D. J. Perreault, J. Hu, J. M. Rivas, Y. Han, O. Leitermann, R. C. Pilawa-Podgurski, A. Sagneri, and C. R. Sullivan, "Opportunities and challenges in very high frequency power conversion," in 2009 Twenty-Fourth Annual IEEE Applied Power Electronics Conference and Exposition, 2009, pp. 1-14.
+
 [12] E. A. Burton, G. Schrom, F. Paillet, J. Douglas, W. J. Lambert, K. Radhakrishnan, and M. J. Hill, "Fivr fully integrated voltage regulators on 4th generation intel® Core™ socs," in 2014 IEEE Applied Power Electronics Conference and Exposition - APEC 2014, 2014, pp. 432-439.
 [13] T. Sen, Y. Elasser, and M. Chen, "Origami inductor: Foldable 3-d polyhedron multiphase air-coupled inductors with flux cancellation and faster transient," IEEE Transactions on Power Electronics, vol. 39, no. 6, pp. 7312-7328, 2024.
+
 [14] M. Chen and C. R. Sullivan, "Unified models for coupled inductors applied to multiphase pwm converters," IEEE Transactions on Power Electronics, vol. 36, no. 12, pp. 14 155-14 174, 2021.
+
 [15] M. Chen, M. Araghchini, K. K. Afridi, J. H. Lang, C. R. Sullivan, and D. J. Perreault, "A systematic approach to modeling impedances and current distribution in planar magnetics," IEEE Transactions on Power Electronics, vol. 31, no. 1, pp. 560-580, 2016.
